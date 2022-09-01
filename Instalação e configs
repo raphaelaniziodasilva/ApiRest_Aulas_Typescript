@@ -1,0 +1,22 @@
+Instalando as blibliotecas de desenvolvimento
+npm add -D typescript nodemon ts-node @types/express @types/node
+
+Instalando as blibliotecas de produção
+Precisamos instalar o TypeOrm globalmente na nossa maquina
+npm install -g typeorm
+npm add express mysql2 typeorm dotenv reflect-metadata 
+
+Inicializando o typescript
+npx tsc --init
+
+vamos criar o script no package.json para rodar os arquivo ts com nodemon
+"scripts": {
+  para rodar os arquivo ts com nodemon
+	"dev": "nodemon --exec ts-node ./src/index.ts",
+
+  para gerar uma migration de forma automatica
+  "migration:generate": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:generate ./src/migrations/default",
+
+  para criar as entidades da migration no banco de dados  
+	"migration:run": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:run",
+},
