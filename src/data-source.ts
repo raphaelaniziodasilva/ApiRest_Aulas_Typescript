@@ -20,6 +20,11 @@ export const AppDataSource = new DataSource({
 
 	entities: [`${__dirname}/**/entities/*.{ts,js}`], // pegando todas as entidades que estão dentro da pasta entities
 	migrations: [`${__dirname}/**/migrations/*.{ts,js}`], // pegando todas os arquivos que estão dentro da pasta migration
+
+    /* Agora execute o comando npm run migration:generate para gerar as tabelas com base nas entidaes na pasta   migations
+
+    Execute o comando npm run migration:run para criar as tabelas dentro do banco de dados
+    */
 })
 
 // Agora va para o index.ts terminar a conexão com o banco de dados

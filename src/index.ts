@@ -9,7 +9,7 @@ AppDataSource.initialize().then(() => {
 	// vamos trabalha com os tipos de dados em json
 	app.use(express.json())
 
-	// as rotas que vai ser usadas
+	// chamando as rotas la do arquivo de rotas
 	app.use(routes)
 
 	// a porta que o express vai ficar escutando

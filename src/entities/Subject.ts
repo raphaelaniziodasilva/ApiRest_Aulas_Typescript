@@ -15,6 +15,7 @@ export class Subject {
 	@Column({ type: 'text' })
 	name: string
 
+	// criando relacionamento de muitos para muitos entre dusciplinas e aulas
 	@ManyToMany(() => Room, room => room.subjects)
 	@JoinTable({
 		name: 'room_subject',
