@@ -1,7 +1,7 @@
 # ApiRest_Aulas_Typescript
 ### Criando um projeto do zero com TypeScript, usando TypeORM e fazendo a implementação de um Backend com Node.js
 
-Criando um projeto simples de sala de aula, aonde vamos ter uma sala de aula com vídeos e matérias da aula
+Criando um projeto simples de sala de aula, aonde vamos ter uma sala de aula com as disciplina e vídeos
 1: Instalando as blibliotecas de desenvolvimento e de produção
 2: Configuração do projeto com o TypeScript
 3: Configuração do TypeORM
